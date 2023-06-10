@@ -1,8 +1,8 @@
 #!/bin/sh
-ln -s `pwd`/zshrc ~/.zshrc
-ln -s `pwd`/profile ~/.profile
-ln -s `pwd`/p10k.zsh ~/.p10k.zsh
-ln -s `pwd`/tmux.conf ~/.tmux.conf
+ln -sf `pwd`/zshrc ~/.zshrc
+ln -sf `pwd`/profile ~/.profile
+ln -sf `pwd`/p10k.zsh ~/.p10k.zsh
+ln -sf `pwd`/tmux.conf ~/.tmux.conf
 #ln -s `pwd`/ssh ~/.ssh
-ln -s `pwd`/alacritty ~/.config/
-ln -s `pwd`/nvim ~/.config/
+ln -sf `pwd`/alacritty ~/.config/
+ln -sf `pwd`/nvim ~/.config/
