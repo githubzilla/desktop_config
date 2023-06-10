@@ -80,7 +80,7 @@ export ZSH_TMUX_AUTOCONNECT=false
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions docker docker-compose vi-mode fzf tmux zsh-z)
+plugins=(git zsh-autosuggestions docker docker-compose vi-mode fzf tmux)
 
 source $ZSH/oh-my-zsh.sh
 
