@@ -8,6 +8,7 @@ set -o vi
 alias rm="echo Use 'trash', or the full path i.e. '/bin/rm'"
 
 #zoxide
+export PATH=~/.local/bin:$PATH
 eval "$(zoxide init zsh)"
 
 #set locale
