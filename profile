@@ -1,4 +1,4 @@
-TERM=xterm-256color
+export TERM=alacritty
 
 #alias nvim to vi
 alias vi='nvim'
@@ -14,7 +14,7 @@ export PATH=~/.local/bin:$PATH
 eval "$(zoxide init zsh)"
 
 #set locale
-export LANG="en_US.UTF-7"
+export LANG="en_US.UTF-8"
 export LANGUAGE="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
 export LC_NUMERIC="en_US.UTF-8"
