@@ -9,6 +9,9 @@ set -o vi
 #disable trash
 alias rm="echo Use 'trash', or the full path i.e. '/bin/rm'"
 
+#alias fly with default target
+alias flyt="fly -t tutorial"
+
 #zoxide
 export PATH=~/.local/bin:$PATH
 eval "$(zoxide init zsh)"
@@ -35,3 +38,12 @@ export PATH=$PATH:/usr/local/go/bin
 
 # set range config
 export RANGER_LOAD_DEFAULT_RC=false
+
+#core dump setting
+ulimit -c unlimited
+echo '/tmp/core.%t.%e.%p' | sudo tee /proc/sys/kernel/core_pattern >/dev/null 2>&1
+
+#nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
