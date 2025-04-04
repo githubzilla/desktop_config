@@ -1,5 +1,7 @@
 export TERM=alacritty
 
+export EDITOR=nvim
+
 #alias nvim to vi
 alias vi='nvim'
 alias v='nvim'
@@ -15,6 +17,9 @@ alias flyt="fly -t tutorial"
 #zoxide
 export PATH=~/.local/bin:$PATH
 eval "$(zoxide init zsh)"
+
+#suspend machine
+alias suspend="sudo systemctl suspend"
 
 #set locale
 export LANG="en_US.UTF-8"
@@ -47,3 +52,7 @@ echo '/tmp/core.%t.%e.%p' | sudo tee /proc/sys/kernel/core_pattern >/dev/null 2>
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#bindkey
+bindkey '^[|' zsh_gh_copilot_explain  # bind Alt+shift+\ to explain
+bindkey '^[\' zsh_gh_copilot_suggest  # bind Alt+\ to suggest
