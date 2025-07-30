@@ -22,7 +22,7 @@ eval "$(zoxide init zsh)"
 alias suspend="sudo systemctl suspend"
 
 #git checkout with fzf
-alias gcofzf="git branch | grep -v \"^\*\" | fzf --height=20% --reverse --info=inline | xargs git checkout"
+alias fzfgco="git branch | grep -v \"^\*\" | fzf --height=20% --reverse --info=inline | xargs git checkout"
 
 #set locale
 export LANG="en_US.UTF-8"
